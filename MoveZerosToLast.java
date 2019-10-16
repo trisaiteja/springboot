@@ -1,4 +1,4 @@
-public class BubbleSort {
+public class MoveZerosToLast {
 	public static void swap(int[] a, int i, int j) {
 		int temp;
 		temp = a[i];
@@ -10,8 +10,7 @@ public class BubbleSort {
 		int[] a = { 1, 0, 3, 0, 5, 9, 4 };
 		for (int i = 0; i < a.length; i++) {
 			for (int j = i + 1; j < a.length; j++) {
-				//Descending order
-				if (a[i] < a[j]) {
+				if (a[i] == 0) {
 					swap(a, i, j);
 				}
 			}
